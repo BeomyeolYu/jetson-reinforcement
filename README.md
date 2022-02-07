@@ -53,6 +53,8 @@ $ make
 
 During the `cmake` step, PyTorch will be compiled and installed so it can take awhile (around ~30 minutes to an hour on the Jetson).  The stable version of PyTorch we are currently using is `0.3.0`.  The build script will download pacekages and ask you for your `sudo` password during the install.
 
+Note that if CMake complains "The CXX compiler identification is unknown", run `apt-get install build-essential` on your system.
+
 # Verifying PyTorch
 
 Before proceeding, to make sure that PyTorch installed correctly, and to get an introduction to PyTorch if you aren't already familiar, we have provided a Jupyter IPython notebook called **[`intro-pytorch.ipynb`](python/intro-pytorch.ipynb)** that includes some simple PyTorch examples that verify the install and test the CUDA/cuDNN support in PyTorch.
